@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Epilogue%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>NatyaMudra - Customer Care</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#9311d4",
+              "background-light": "#f7f6f8",
+              "background-dark": "#1c1022",
+            },
+            fontFamily: {
+              display: ["Epilogue"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    function toggleFaq(element) {
+        const answer = element.nextElementSibling;
+        const icon = element.querySelector('.material-symbols-outlined');
+        if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+            icon.textContent = 'add';
+        } else {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+            icon.textContent = 'remove';
+        }
+    }
+</script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-primary/20 px-4 sm:px-6 lg:px-10 py-4">
+<div class="flex items-center gap-3">
+<div class="text-primary size-7">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold">NatyaMudra</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6 lg:gap-8">
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">Mudras</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">Dance Forms</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">About</a>
+</nav>
+<div class="flex items-center gap-2 sm:gap-4">
+<button class="md:hidden text-slate-600 dark:text-slate-300 hover:text-primary transition-colors flex items-center justify-center rounded-full size-10">
+<span class="material-symbols-outlined text-2xl"> menu </span>
+</button>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary transition-colors flex items-center justify-center rounded-full size-10" href="#">
+<span class="material-symbols-outlined text-2xl"> help </span>
+</a>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDqI4JylGPP04vsqlizcEJIJJaMDEs7NmyHQ1BeZd0h7NdYgLeknM5zIjheCAwU1EGjEDvUahEvesa23mBb7HRoBWpjhdv874EGOF9K4awcM-p-W5BMduYbv-VnxZJ7argQMPmoYcsqYb7kaABd7ReyZ28CcyqfOv_Bf9lERWnV5IQSN-1ObDnvoPEK8nmMzCBbPLczhQm-polo81Ie0DAjVU2K5beQnaii5eoxZJP9tnGYP8sQW_UqnpnKfavRXGhi-cfBalbpDKs");'></div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-12 sm:py-16 md:py-24">
+<div class="w-full max-w-4xl px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h1 class="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white tracking-tight">Customer Support</h1>
+<p class="mt-4 text-lg text-slate-600 dark:text-slate-400">We're here to help. Contact us anytime.</p>
+</div>
+<div class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex items-start gap-4 rounded-lg bg-white dark:bg-slate-900/40 p-6 shadow-sm border border-primary/10">
+<div class="flex items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0 size-12">
+<span class="material-symbols-outlined text-2xl"> chat </span>
+</div>
+<div class="flex-1">
+<h3 class="text-lg font-semibold text-slate-900 dark:text-white">WhatsApp</h3>
+<p class="text-slate-600 dark:text-slate-400 break-words">+91 9876543210</p>
+<a class="mt-2 inline-block text-sm font-medium text-primary hover:underline" href="#">Chat with us</a>
+</div>
+</div>
+<div class="flex items-start gap-4 rounded-lg bg-white dark:bg-slate-900/40 p-6 shadow-sm border border-primary/10">
+<div class="flex items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0 size-12">
+<span class="material-symbols-outlined text-2xl"> call </span>
+</div>
+<div class="flex-1">
+<h3 class="text-lg font-semibold text-slate-900 dark:text-white">Mobile</h3>
+<p class="text-slate-600 dark:text-slate-400 break-words">+91 9876543210</p>
+<a class="mt-2 inline-block text-sm font-medium text-primary hover:underline" href="#">Call us now</a>
+</div>
+</div>
+<div class="md:col-span-2 flex flex-col items-center justify-center gap-4 rounded-lg bg-white dark:bg-slate-900/40 p-6 shadow-sm border border-primary/10 text-center">
+<div class="flex items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0 size-12">
+<span class="material-symbols-outlined text-2xl"> mail </span>
+</div>
+<div class="flex-1">
+<h3 class="text-lg font-semibold text-slate-900 dark:text-white">Email</h3>
+<p class="text-slate-600 dark:text-slate-400 break-words text-lg">support@natyamudra.com</p>
+<a class="mt-2 inline-block text-sm font-medium text-primary hover:underline" href="#">Send an email</a>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900/40 rounded-lg p-6 sm:p-8 shadow-sm border border-primary/10 text-center">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">Have Feedback or Suggestions?</h2>
+<p class="text-slate-600 dark:text-slate-400 mb-6">Your insights help us improve NatyaMudra for everyone.</p>
+<a class="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-primary/90 transition-colors" href="#">
+<span class="material-symbols-outlined mr-2"> feedback </span>
+Submit Feedback
+</a>
+</div>
+<div class="bg-white dark:bg-slate-900/40 rounded-lg p-6 sm:p-8 shadow-sm border border-primary/10">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 text-center">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<div class="border-b border-primary/10 pb-4">
+<button class="flex justify-between items-center w-full text-left" onclick="toggleFaq(this)">
+<h3 class="flex-1 text-lg font-medium text-slate-800 dark:text-slate-200 pr-4">What is NatyaMudra?</h3>
+<span class="material-symbols-outlined text-primary"> add </span>
+</button>
+<div class="overflow-hidden max-h-0 transition-max-height duration-500 ease-in-out">
+<p class="mt-2 text-slate-600 dark:text-slate-400">NatyaMudra is a mobile and web application designed to identify and analyze mudras from six traditional Indian dance forms. It serves as a digital guide for dancers, students, and enthusiasts.</p>
+</div>
+</div>
+<div class="border-b border-primary/10 pb-4">
+<button class="flex justify-between items-center w-full text-left" onclick="toggleFaq(this)">
+<h3 class="flex-1 text-lg font-medium text-slate-800 dark:text-slate-200 pr-4">How does the mudra recognition work?</h3>
+<span class="material-symbols-outlined text-primary"> add </span>
+</button>
+<div class="overflow-hidden max-h-0 transition-max-height duration-500 ease-in-out">
+<p class="mt-2 text-slate-600 dark:text-slate-400">Our app uses advanced computer vision and machine learning algorithms. Simply use your device's camera to capture a mudra, and the app will identify it, providing details about its name, meaning, and usage in different dance forms.</p>
+</div>
+</div>
+<div class="border-b border-primary/10 pb-4">
+<button class="flex justify-between items-center w-full text-left" onclick="toggleFaq(this)">
+<h3 class="flex-1 text-lg font-medium text-slate-800 dark:text-slate-200 pr-4">Which dance forms are covered?</h3>
+<span class="material-symbols-outlined text-primary"> add </span>
+</button>
+<div class="overflow-hidden max-h-0 transition-max-height duration-500 ease-in-out">
+<p class="mt-2 text-slate-600 dark:text-slate-400">NatyaMudra currently supports mudras from six major Indian classical dance forms: Bharatanatyam, Kathak, Odissi, Kuchipudi, Mohiniyattam, and Manipuri.</p>
+</div>
+</div>
+<div class="border-b border-primary/10 pb-4">
+<button class="flex justify-between items-center w-full text-left" onclick="toggleFaq(this)">
+<h3 class="flex-1 text-lg font-medium text-slate-800 dark:text-slate-200 pr-4">Is the app free to use?</h3>
+<span class="material-symbols-outlined text-primary"> add </span>
+</button>
+<div class="overflow-hidden max-h-0 transition-max-height duration-500 ease-in-out">
+<p class="mt-2 text-slate-600 dark:text-slate-400">NatyaMudra offers a free version with access to a limited set of mudras. A premium subscription is available to unlock the full database of mudras, advanced analysis features, and tutorials.</p>
+</div>
+</div>
+<div>
+<button class="flex justify-between items-center w-full text-left" onclick="toggleFaq(this)">
+<h3 class="flex-1 text-lg font-medium text-slate-800 dark:text-slate-200 pr-4">How can I report an issue or suggest a feature?</h3>
+<span class="material-symbols-outlined text-primary"> add </span>
+</button>
+<div class="overflow-hidden max-h-0 transition-max-height duration-500 ease-in-out">
+<p class="mt-2 text-slate-600 dark:text-slate-400">We'd love to hear from you! You can contact our support team via email at support@natyamudra.com, use the contact options listed on this page, or submit your thoughts through our feedback form.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

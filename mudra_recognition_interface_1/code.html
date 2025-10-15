@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Epilogue%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>NatyaMudra - Mudra Recognition</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#9311d4",
+            "background-light": "#f7f6f8",
+            "background-dark": "#1c1022",
+          },
+          fontFamily: {
+            display: ["Epilogue"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+            lg: "1rem",
+            xl: "1.5rem",
+            full: "9999px"
+          },
+        },
+      },
+    };
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+<h1 class="text-2xl font-bold text-gray-900 dark:text-white">NatyaMudra</h1>
+</div>
+<nav class="hidden md:flex items-center justify-center gap-8">
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">About</a>
+<a class="text-sm font-medium text-primary dark:text-primary" href="#">Mudra</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Practice</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="relative group">
+<button>
+<div class="h-10 w-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCoOLqJAP2XnBHh4-NbzVjyhb4u8YxMZ9R3XVWTUYm5JjFUPKZDvesNGFDjFtdq0pKtujMBf_o2NpnmaqZ11auQTudLqultMPCqnLSAacd_PWlUvEWPjgTtHSRDt7eOR4xgnZIlhsCpphVETEgLnPxAQQ8AkA7OuY92mGxECm2Ehw--ysHxF_HqtqExZSZ7ztJ1FncFLgN5DCbL93jlAzo5OsXLHeFBDS4MjY1p1hzNUOMnHPIeYohz7VtxBkQYacW3LYVotPkpyPg")'></div>
+</button>
+<div class="absolute right-0 mt-2 w-48 bg-background-light dark:bg-background-dark border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+<a class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-primary/10" href="../user_profile/code.html">Profile</a>
+                    <a class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-primary/10" href="../logout_confirmation/code.html" onclick="(function(){try{localStorage.removeItem('isLoggedIn');localStorage.removeItem('user');sessionStorage.clear();}catch(e){};window.location.href='../logout_confirmation/code.html';return false;})();">Logout</a>
+</div>
+</div>
+<button class="md:hidden text-gray-800 dark:text-gray-200">
+<span class="material-symbols-outlined"> menu </span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+<div class="flex flex-col gap-6">
+<div class="relative w-full aspect-video bg-gray-200 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-300 dark:border-gray-700">
+<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZ9vL_tU6IV4svm_ZNnx8kiU6UpRl-1MfCLGv3xaYEjfTTnGry3O_fij1cdqH74xZoLheFC5V4gwXvQJRKACFaf_jU4qX9HhBqlbLa2GUHrnoq92maaoiiwoJJV0SZjFzSRUGOwZaFPo7QeMCkNcowmx2ntVUuJotshzhQgd2wz67t7nqICpCr_D1AlhppdfNFKhoGZNi9iS2exbz_BYUWR4w7RNJmQP2EwVmAWqZN3tJeNLir_zb4F5rVEA9Rmr8v2QMdRIkqoHo')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-2 text-white">
+<span class="material-symbols-outlined text-lg">videocam</span>
+<span class="text-sm font-medium">Live Camera Feed</span>
+</div>
+</div>
+<div class="flex justify-center gap-4">
+<button class="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-medium rounded-lg text-white bg-primary hover:bg-primary/90">
+<span class="material-symbols-outlined mr-2">photo_camera</span>
+                Start Recognition
+              </button>
+<button class="inline-flex items-center justify-center px-5 py-2.5 border border-gray-300 dark:border-gray-600 text-sm font-medium rounded-lg text-gray-800 dark:text-gray-200 bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800">
+<span class="material-symbols-outlined mr-2">flip_camera_android</span>
+                Switch Camera
+              </button>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark border border-gray-200 dark:border-gray-700/50 rounded-xl shadow-2xl p-6 sm:p-8">
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-2xl font-bold text-gray-900 dark:text-white">Recognition Result</h2>
+<div class="flex items-center gap-2 text-green-500">
+<span class="material-symbols-outlined"> check_circle </span>
+<span class="font-medium">Match Found</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-6">
+<div class="w-32 h-32 sm:w-40 sm:h-40 flex-shrink-0">
+<img alt="Pataka Mudra" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF_qun-4geyktnh64wYvULoNW9ffSNWG6HK_bg_1qkXPVtxXwy9qgJkJc5Fsvx6elPFqysoMV04XesIwg5o578QGhkWxBAE7KgHxM98ALUa1eSATPcsasu2RhOBXusrOso3kImdPXIQjblW_7Nfve-IRUN7rTWyy66L3o7EgQcj7TFP2_EAy5NzkhzouS2hIW_kOCfiZRvdNZd1rWgavs3XojlB3jOHnxig9zsIAWJVjwdHI98EWkug_L0QNbmWS0a9ORIPqoUzRg"/>
+</div>
+<div class="flex-grow text-center sm:text-left">
+<h3 class="text-3xl font-bold text-primary">Pataka</h3>
+<p class="text-lg text-gray-600 dark:text-gray-400 mt-1">"Flag"</p>
+<p class="mt-4 text-gray-700 dark:text-gray-300">
+                  This mudra is used to represent various concepts such as a forest, river, clouds, night, or the act of beginning a dance. The fingers are held straight and together, with the thumb bent to touch the base of the index finger.
+                </p>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700/50">
+<h4 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-4">Symbolism &amp; Usage</h4>
+<ul class="space-y-3 text-gray-600 dark:text-gray-400">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5"> self_improvement </span>
+<span>Denotes blessings, forbidding things, silence, and prowess.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5"> waving_hand </span>
+<span>Used in the beginning of a Natya (dance-drama).</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5"> water_drop </span>
+<span>Can represent clouds, a forest, or a river.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
